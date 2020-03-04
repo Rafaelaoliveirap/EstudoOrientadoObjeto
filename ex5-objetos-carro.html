@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function CarroNovo(_marca, _anoDeFabricacao, _velocidadeMaxima, _velocidadeAtual) {
+            this.marca = _marca
+            this.anoDeFabricacao = _anoDeFabricacao
+            this.velocidadeMaxima = parseInt(_velocidadeMaxima)
+            this.velocidadeAtual = parseInt(_velocidadeAtual)
+        }
+
+        var velocidadeAtual= parseInt(prompt("Digite a velocidade atual do veículo: "))
+        
+
+        carro1= new CarroNovo ("renaut", "2014", "100 km/h", velocidadeAtual)
+         
+                    
+        CarroNovo.prototype.acelerar= function() {
+
+
+
+            for (this.velocidadeAtual = 0; this.velocidadeAtual < this.velocidadeMaxima; this.velocidadeAtual++) {
+                
+            }
+            document.write("A velocidade atual é \n" + this.velocidadeAtual)
+        //if(this._velocidadeAtual<this._velocidadeMaxima){
+
+          //  for (this.velocidadeAtual = 0; this.velocidadeAtual < this.velocidadeMaxima; this.velocidadeAtual++) {}
+           // alert ("Você está dentro do limite de velocidade!")}
+      //  else{alert("Você está acima do limite de velocidade, reduza!")
+        
+       // }   
+        }
+
+        CarroNovo.prototype.desacelerar=function() {
+           // if(this.velocidadeAtual>this.velocidadeMaxima){
+           //     alert("Você está acima do limite de velocidade, reduza")}
+            
+        
+                for(this.velocidadeAtual=0;this.velocidadeAtual>this.velocidadeMaxima; this.velocidadeAtual--){
+                }
+                document.write ("A velocidade atual é \n" + this.velocidadeAtual)
+                   
+        }   
+
+        carro1.acelerar()
+
+        //carro1.desacelerar()
+
+
+
+    </script>
+</body>
+
+</html>
